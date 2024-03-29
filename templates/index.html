@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phishing Simulatie</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
 </head>
 <body>
-    <h1>Log in op uw account</h1>
+    
+    <div class="login-container">
+    <h1>Inloggen</h1>
     <form method="post">
-        <label for="username">Gebruikersnaam:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Wachtwoord:</label><br>
+        <label for="voornaam">voornaam</label><br>
+        <input type="text" id="voornaam" name="voornaam"><br>
+
+        <label for="achternaam">Achternaam</label><br>
+       <input type="text" id="achternaam" name="achternaam"><br>
+
+        <label for="email">E-mailadres</label><br>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="password">Wachtwoord</label><br>
         <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Inloggen">
+
+        <input class="Inloggen" type="submit" value="Inloggen">
     </form>
+  </div>
+
+
 </body>
 </html>
